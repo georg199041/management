@@ -1,7 +1,12 @@
 class StaffController < ApplicationController
   
-   def show
+  def index
+    
+  end
+  
+  def show
     @staff = Staff.find(params[:id])
+    @title = @staff.name
   end
   
   def new
