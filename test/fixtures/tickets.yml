@@ -3,7 +3,11 @@
 one:
   title: MyString
   text: MyText
+  customer_id: 1
+  status: MyString
 
 two:
   title: MyString
   text: MyText
+  customer_id: 1
+  status: MyString
