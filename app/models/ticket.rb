@@ -4,4 +4,6 @@ class Ticket < ActiveRecord::Base
   belongs_to :customers
   
   validates :text, :length => { :maximum => 140 }
+  validates :text, :title, :presence => true
+
 end

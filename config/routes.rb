@@ -1,15 +1,16 @@
 Management::Application.routes.draw do
   
-
-  get "staff/new"
-  
   match '/register',  :to => 'staff#new'
 
   resources :tickets
 
   resources :customers
   
+  resources :staff
+  
   match '/help',    :to => 'pages#help'
+  
+  match '/signup',  :to => 'staff#new'
   
   root :to => 'pages#index'
   
