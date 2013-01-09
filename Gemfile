@@ -16,7 +16,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
-gem 'annotate', '2.4.0'
+
 gem 'execjs'
 
   gem 'uglifier', '>= 1.0.3'
