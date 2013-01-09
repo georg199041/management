@@ -10,8 +10,6 @@ Management::Application.routes.draw do
   
   match '/help',    :to => 'pages#help'
   
-  match '/signup',  :to => 'staff#new'
-  
   root :to => 'pages#index'
   
   

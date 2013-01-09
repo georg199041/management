@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(:version => 20130109142412) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "staffs", :force => true do |t|
+    t.string    "name",       :null => false
+    t.string    "password",   :null => false
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
+  end
+
   create_table "tickets", :force => true do |t|
     t.string   "title"
     t.text     "text"

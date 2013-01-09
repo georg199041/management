@@ -1,4 +1,5 @@
 class Staff < ActiveRecord::Base
+  attr_accessor :password
   attr_accessible :name, :password, :password_confirmation
   
   validates :name,  :presence => true,
